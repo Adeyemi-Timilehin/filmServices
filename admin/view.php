@@ -2,10 +2,10 @@
 require "header.php";
 require "adminClass.php";
 if(isset($_GET['result'])){
-    echo $_GET['result'];
+   $p= $_GET['result'];
 }
 $obj=new Admin;
-$r=$obj->get();
+$r=$obj->get($p);
 ?>
         <div class="main-panel">
             <!-- Navbar -->

@@ -96,8 +96,8 @@ function getMovies(){
     //fetcing per data from database 
    
     
-        function get(){
-            $sql="SELECT * FROM movie_services ";
+        function get($id){
+            $sql="SELECT * FROM movie_services where id='$id'";
             $output = $this->con->query ($sql);
             $result = $output->fetch_assoc();
           
